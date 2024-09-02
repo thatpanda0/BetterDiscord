@@ -1,0 +1,291 @@
+/**
+ * @name Fluent Basic
+ * @author Me
+ * @version 1.0.0
+ * @description I made this stealing other themes lmao
+ * @source https://github.com/E/E
+*/
+@import url("https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/icons.css");
+@import url(https://discordstyles.github.io/Fluent/Icons.css);
+@import url(https://nyri4.github.io/Discolored/main.css);
+
+@font-face {
+  font-family: "Segoe UI";
+  src: local("Segoe UI Light"), url("https://discordstyles.github.io/Fluent/fonts/light.woff2") format("woff2");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: local("Segoe UI Semilight"), url("https://discordstyles.github.io/Fluent/fonts/semilight.woff2") format("woff2");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: local("Segoe UI"), url("https://discordstyles.github.io/Fluent/fonts/normal.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: local("Segoe UI Semibold"), url("https://discordstyles.github.io/Fluent/fonts/semibold.woff2") format("woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: local("Segoe UI Bold"), url("https://discordstyles.github.io/Fluent/fonts/bold.woff2") format("woff2");
+  font-weight: 700;
+}
+:root {
+  --font-primary: "Segoe UI Variable Text", "Segoe UI", "Helvetica Neue", Helvetica, Verdana, Tahoma, Geneva, Arial, sans-serif;
+  --font-display: "Segoe UI Variable Display", "Segoe UI", "Helvetica Neue", Helvetica, Verdana, Tahoma, Geneva, Arial, sans-serif;
+  --font-code: Consolas, Menlo, Monaco, "Courier New", monospace;
+}
+ 
+:root {
+  --transition: cubic-bezier(0, 0, 0, 1);
+  --accent-text: #000;
+  --accent-solid: var(--accent);
+  --pill-width: 4px;
+  --pill-height: 16px;
+  --pill-transition: scale 0.15s var(--transition);
+  --btn-radius: 16px;
+  --rounded-high: 8px;
+  --rounded: 8px;
+  --toolbar-height: 64px;
+  --bottombar-height: 64px;
+  --font-weight-light: 300;
+  --font-weight-semilight: 350;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size: 16px;
+  --font-size-md: 18px;
+  --font-size-lg: 20px;
+  --font-size-xl: 28px;
+  --font-size-2xl: 40px;
+  --line-height: 16px;
+  --line-height-md: 20px;
+  --line-height-lg: 24px;
+  --line-height-xl: 28px;
+  --line-height-2xl: 36px;
+  --line-height-3xl: 52px;
+  --font-display: "Segoe UI", sans-serif;
+  --font-primary: "Segoe UI", sans-serif;
+  --shadow-flyout: 0px 8px 16px hsla(0 0% 0% / 0.14);
+  --shadow-dialog: 0px 32px 64px hsla(0 0% 0% / 0.188) 0px 2px 21px hsla(0 0% 0% / 0.147);
+  --cursor: default;
+  --chat-mention-colour: var(--accent);
+  --chat-padding-y: 12px;
+  --chat-padding-x: 16px;
+  --chat-spacing-y: 32px;
+  --chat-spacing-x: 24px;
+  --server-size: 48px;
+  --server-icon-size: 69px;
+  --server-container: calc(var(--server-size) + 16px);
+  --server-hover-selected: inset 0 0 0 100vmax var(--server-bg), inset 1px 0 0 var(--btn-border-x), inset 0 1px 0 var(--btn-border-t),
+  	inset -1px 0 var(--btn-border-x), inset 0 -1px 0 var(--btn-border-b);
+  --server-icon-shape: 50%;
+  --server-folder-icon-shape: 2px;
+  --channel-padding: 8px;
+  --banner-height: 155px;
+  --profile-modal-height: 700px;
+  --profile-modal-width: 800px;
+  --win-btn-height: 32px;
+  --win-btn-width: 52px;
+  --profile-premium-text-shadow: 0 2px 5px hsl(0 0% 0% / 0.75);
+  --discord-pink: 302 calc(var(--saturation-factor, 1) * 100%) 72.5%;
+  --discord-red: 359 calc(var(--saturation-factor, 1) * 82.6%) 59.4%;
+  --discord-grey: 217 8% 34%;
+  --text-normal: var(--text-primary);
+  --interactive-muted: var(--text-quaternary);
+  --text-link: var(--accent);
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important;
+  border-color: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-background) !important;
+}
+
+.chatContent_a7d72e .scroller_e2e187::-webkit-scrollbar,
+.peopleList_e0840f::-webkit-scrollbar,
+.scroller_f4e139::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.chatContent_a7d72e .scroller_e2e187::-webkit-scrollbar-track,
+.peopleList_e0840f::-webkit-scrollbar-track,
+.scroller_f4e139::-webkit-scrollbar-track {
+  background: transparent !important;
+  border-color: transparent !important;
+}
+.chatContent_a7d72e .scroller_e2e187::-webkit-scrollbar-thumb,
+.peopleList_e0840f::-webkit-scrollbar-thumb,
+.scroller_f4e139::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-background);
+}
+
+.members_cbd271::-webkit-scrollbar,
+.container_ee69e0 .scroller_c43953::-webkit-scrollbar,
+.sidebarRegionScroller_c25c6d::-webkit-scrollbar,
+.scroller_c47fa9::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* OG Profile?!?!??! */
+
+/* about me: 6 lines */
+
+.viewFullBio_fc5c48 {
+	display: none;
+}
+.descriptionClamp_fc5c48 {
+	-webkit-line-clamp: 190 !important;
+	max-height: 199px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.descriptionClamp_fc5c48::-webkit-scrollbar-thumb {
+	background: transparent;
+	border-radius: 99px;
+}
+.descriptionClamp_fc5c48::-webkit-scrollbar {
+	width: 4px;
+}
+.descriptionClamp_fc5c48:hover::-webkit-scrollbar-track {
+	background: 0 0;
+	border-radius: 10px;
+}
+.descriptionClamp_fc5c48:hover::-webkit-scrollbar-thumb {
+	background: var(--bg-overlay-6, var(--background-tertiary));
+	border-radius: 999px;
+}
+
+
+.descriptionClamp_fc5c48:before {
+	content: "ABOUT ME";
+	font-size: 12px;
+	color: var(--header-secondary);
+	font-weight: 800;
+	font-family: var(--font-display);
+}
+
+/* Roles */
+.root_c83b44:before {
+	content: "ROLES";
+	font-size: 12px;
+	color: var(--header-secondary);
+	font-weight: 800;
+	font-family: var(--font-display);
+	margin-right: 200px;
+	margin-bottom: 4px;
+}
+[lang="DE"] .root_c83b44:before {
+	content: "ROLLEN";
+}
+
+.root_c83b44 {
+	position: relative;
+	margin-bottom: 22px;
+	margin-top: 12px;
+}
+.role_f9575e {
+	background-color: transparent;
+}
+
+.addButtonIcon_e4010c {
+	width: 10px;
+	height: 10px;
+}
+
+.theme-dark .actionButton_e4010c {
+	border-color: var(--background-accent);
+	color: #b9bbbe;
+	background: 0 0;
+}
+
+.role_f9575e {
+	transform: translate(0);
+	border: 0;
+	border-radius: 4200px;
+}
+.role_f9575e .roleRemoveIcon_f9575e {
+	margin: 0;
+	left: 1px;
+	transform: translate(50%, -50%);
+}
+.role_f9575e .roleRemoveButton_f9575e {
+	position: static;
+}
+.roleCircle_a26d7b {
+	margin: 0 4px 0px 1px !important;
+}
+.role_f9575e > :first-child {
+	margin: 0;
+}
+/* Add a colored border around the role */
+.role_f9575e .roleRemoveButton_f9575e :is(.roleCircle_a26d7b,.roleFlowerStar_f9575e/*linked roles*/):before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	background: inherit;
+	border-radius: 50px;
+	border: 0.65px solid transparent;
+  mask: none;
+	-webkit-mask: linear-gradient(#000, #000) padding-box, linear-gradient(#000, #000);
+  mask-composite: none;
+	-webkit-mask-composite: xor;
+	opacity: 0.6;
+	content: "";
+	z-index: -1;
+}
+
+/* border around addrole button*/
+:is(.root_c83b44) .button_dd4f85,
+.button_edead5 {
+	border: 1px solid var(--interactive-muted);
+	background: none;
+	border-radius: 999%;
+}
+
+
+/* IDK what this does but it bricks custom status messages :D */
+.statusBubbleOuter_d0a252,
+.statusBubble_d0a252 {
+	border: none;
+	background: none;
+  display: none;
+}
+
+.body_b07019 {
+    z-index: 1;
+    padding: 8px 6px 8px;
+    display: block;
+    margin: auto;
+    flex-direction: column;
+    gap: 12px;
+    background: linear-gradient(color-mix(in oklab,var(--profile-gradient-overlay-color)100%,var(--profile-gradient-primary-color)),color-mix(in oklab,var(--profile-gradient-overlay-color)100%,var(--profile-gradient-primary-color))var(--custom-user-banner-height-bite-size),color-mix(in oklab,var(--profile-gradient-overlay-color)100%,var(--profile-gradient-secondary-color)));
+    border-radius: 10px;
+    width: 265px;
+}
+
+.biteSizeInnerThemed_c69a7b .container_e5a42d {
+	display: none;
+}
+
+.mutuals_dc9488 {
+  display: none;
+}
+
+.nicknameIcons_c32acf {
+	display: none;
+}
+

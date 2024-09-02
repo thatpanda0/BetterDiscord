@@ -1,0 +1,216 @@
+/**
+ * @name Windows Titlebar
+ * @author Me
+ * @version 1.0.0
+ * @description Replaces Discord custom titlebar with Windows Default (tries to be as close as possible)
+ * @source https://github.com/E/E
+*/
+
+@font-face {
+  font-family: "Segoe UI";
+  src: local("Segoe UI Light"), url("https://discordstyles.github.io/Fluent/fonts/light.woff2") format("woff2");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: local("Segoe UI Semilight"), url("https://discordstyles.github.io/Fluent/fonts/semilight.woff2") format("woff2");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: local("Segoe UI"), url("https://discordstyles.github.io/Fluent/fonts/normal.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: local("Segoe UI Semibold"), url("https://discordstyles.github.io/Fluent/fonts/semibold.woff2") format("woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: local("Segoe UI Bold"), url("https://discordstyles.github.io/Fluent/fonts/bold.woff2") format("woff2");
+  font-weight: 700;
+}
+:root {
+  --font-primary: "Segoe UI Variable Text", "Segoe UI", "Helvetica Neue", Helvetica, Verdana, Tahoma, Geneva, Arial, sans-serif;
+  --font-display: "Segoe UI Variable Display", "Segoe UI", "Helvetica Neue", Helvetica, Verdana, Tahoma, Geneva, Arial, sans-serif;
+  --font-code: Consolas, Menlo, Monaco, "Courier New", monospace;
+}
+/* titlebar light */
+
+.theme-light .titleBar_a934d8 {
+  background-color: transparent;
+}
+.theme-light .titleBar_a934d8.withFrame_a934d8 {
+  height: 28px;
+}
+.theme-light .titleBar_a934d8 .wordmarkWindows_a934d8 {
+  color: rgba(0, 0, 0, 1);
+}
+.theme-light .titleBar_a934d8 .wordmarkWindows_a934d8::after {
+  content: "Discord";
+  top: 9px;
+  left: 16px;
+  display: block;
+  position: absolute;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.theme-light .titleBar_a934d8 .wordmarkWindows_a934d8 svg {
+  display: none;
+}
+.theme-light .titleBar_a934d8 .winButton_a934d8 {
+  width: 46px;
+  height: 32px;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 1);
+  transition: background-color 83ms linear;
+}
+.theme-light .titleBar_a934d8 .winButton_a934d8:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.theme-light .titleBar_a934d8 .winButton_a934d8:active {
+  background-color: rgba(255, 255, 255, 0.0326);
+}
+.theme-light .titleBar_a934d8 .winButton_a934d8.winButtonClose_a934d8:hover {
+  background-color: #C42B1C;
+}
+.theme-light .titleBar_a934d8 .winButton_a934d8.winButtonClose_a934d8:active {
+  background-color: rgba(196, 43, 28, 0.9);
+}
+div[id^=bd-floating-window-],
+#floating-editor-window {
+  padding-bottom: 0;
+  z-index: 3002;
+  background-color: transparent;
+  border: 1px solid rgba(117, 117, 117, 0.4);
+}
+div[id^=bd-floating-window-] .floating-window-titlebar,
+#floating-editor-window .floating-window-titlebar {
+  height: 32px;
+  background-color: #202020;
+}
+div[id^=bd-floating-window-] .floating-window-titlebar .title,
+#floating-editor-window .floating-window-titlebar .title {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #FFF;
+}
+div[id^=bd-floating-window-] .floating-window-titlebar .floating-window-buttons .button,
+#floating-editor-window .floating-window-titlebar .floating-window-buttons .button {
+  width: 46px;
+  height: 32px;
+}
+div[id^=bd-floating-window-] .floating-window-titlebar .floating-window-buttons .button.maximize-button,
+#floating-editor-window .floating-window-titlebar .floating-window-buttons .button.maximize-button {
+  display: none;
+}
+div[id^=bd-floating-window-] .floating-window-titlebar .floating-window-buttons .button.close-button:hover,
+#floating-editor-window .floating-window-titlebar .floating-window-buttons .button.close-button:hover {
+  background-color: #C42B1C;
+}
+div[id^=bd-floating-window-] .floating-window-content,
+#floating-editor-window .floating-window-content {
+  background-color: #202020;
+}
+div[id^=bd-floating-window-] #bd-editor-controls,
+#floating-editor-window #bd-editor-controls {
+  background-color: transparent;
+  border-radius: 0;
+}
+
+/* titlebar dark */
+
+
+#app-mount .bg_d4b6c5 {
+	background: transparent;
+}
+
+.theme-dark .titleBar_a934d8 {
+  background-color: transparent;
+}
+.theme-dark .titleBar_a934d8.withFrame_a934d8 {
+  height: 28px;
+}
+.theme-dark .titleBar_a934d8 .wordmarkWindows_a934d8 {
+  color: rgba(255,255,255, 1);
+}
+.theme-dark .titleBar_a934d8 .wordmarkWindows_a934d8::after {
+  content: "Discord";
+  top: 9px;
+  left: 16px;
+  display: block;
+  position: absolute;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.theme-dark .titleBar_a934d8 .wordmarkWindows_a934d8 svg {
+  display: none;
+}
+.theme-dark .titleBar_a934d8 .winButton_a934d8 {
+  width: 46px;
+  height: 32px;
+  background-color: transparent;
+  color: rgba(255,255,255, 1);
+  transition: background-color 83ms linear;
+}
+.theme-dark .titleBar_a934d8 .winButton_a934d8:hover {
+  background-color: rgba(0,0,0, 0.8);
+}
+.theme-dark .titleBar_a934d8 .winButton_a934d8:active {
+  background-color: rgba(0,0,0, 0.0326);
+}
+.theme-dark .titleBar_a934d8 .winButton_a934d8.winButtonClose_a934d8:hover {
+  background-color: #C42B1C;
+}
+.theme-dark .titleBar_a934d8 .winButton_a934d8.winButtonClose_a934d8:active {
+  background-color: rgba(196, 43, 28, 0.9);
+}
+div[id^=bd-floating-window-],
+#floating-editor-window {
+  padding-bottom: 0;
+  z-index: 3002;
+  background-color: transparent;
+  border: 1px solid rgba(117, 117, 117, 0.4);
+}
+div[id^=bd-floating-window-] .floating-window-titlebar,
+#floating-editor-window .floating-window-titlebar {
+  height: 32px;
+  background-color: #202020;
+}
+div[id^=bd-floating-window-] .floating-window-titlebar .title,
+#floating-editor-window .floating-window-titlebar .title {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #FFF;
+}
+div[id^=bd-floating-window-] .floating-window-titlebar .floating-window-buttons .button,
+#floating-editor-window .floating-window-titlebar .floating-window-buttons .button {
+  width: 46px;
+  height: 32px;
+}
+div[id^=bd-floating-window-] .floating-window-titlebar .floating-window-buttons .button.maximize-button,
+#floating-editor-window .floating-window-titlebar .floating-window-buttons .button.maximize-button {
+  display: none;
+}
+div[id^=bd-floating-window-] .floating-window-titlebar .floating-window-buttons .button.close-button:hover,
+#floating-editor-window .floating-window-titlebar .floating-window-buttons .button.close-button:hover {
+  background-color: #C42B1C;
+}
+div[id^=bd-floating-window-] .floating-window-content,
+#floating-editor-window .floating-window-content {
+  background-color: #202020;
+}
+div[id^=bd-floating-window-] #bd-editor-controls,
+#floating-editor-window #bd-editor-controls {
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.platform-win .sidebar_a4d4d9 {
+  border-radius: 0;
+}

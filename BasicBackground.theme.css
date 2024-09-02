@@ -1,0 +1,197 @@
+/**
+ * @name BasicBackground
+ * @description Allows you to use a Background Image without greatly altering the basic Layout of Discord
+ * @author DevilBro
+ * @version 1.0.5
+ * @authorId 278543574059057154
+ * @invite Jx3TjNS
+ * @donate https://www.paypal.me/MircoWittrien
+ * @patreon https://www.patreon.com/MircoWittrien
+ * @website https://mwittrien.github.io/
+ * @source https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/BasicBackground/
+ * @updateUrl https://mwittrien.github.io/BetterDiscordAddons/Themes/BasicBackground/BasicBackground.theme.css
+ * 
+ */
+
+:root {
+	--transparencycolor:			255, 255, 255; /* Dark: 0,0,0 ||| Light: 255,255,255 */
+	--transparencyalpha:			0.7;
+	--messagetransparency:			0.5;
+	--guildchanneltransparency:		0.15;
+	--chatinputtransparency:		0.0;
+	--memberlisttransparency:		0.0;
+	--accentcolor:				128,128,128;
+	
+	--settingsicons:			1;
+	--font:					"gg sans", "Noto Sans";
+	--textshadow:				transparent;
+	
+	--textbrightest: 			255, 255, 255;
+	--textbrighter: 			222, 222, 222;
+	--textbright: 				200, 200, 200;
+	--textdark: 				160, 160, 160;
+	--textdarker: 				125, 125, 125;
+	--textdarkest: 				90, 90, 90;
+	
+	--background:				url(https://i.imgur.com/y5VkXwX.jpg); /*  Dark: https://i.imgur.com/8R27bpF.jpg ||| Light: https://i.imgur.com/y5VkXwX.jpg*/
+	--backgroundposition:			center;
+	--backgroundsize:			cover;
+	--backgroundblur:			0;
+	
+	--popout:				var(--background);
+	--popoutposition:			var(--backgroundposition);
+	--popoutsize:				var(--backgroundsize);
+	--popoutblur:				var(--backgroundblur);
+	
+	--backdrop:				rgba(0, 0, 0, 0.85);
+	--backdropposition:			center;
+	--backdropsize:				cover;
+	--backdropblur:				0;
+	
+	
+	--transparencycolor_v:			var(--transparencycolor_s, var(--transparencycolor));
+	--transparencyalpha_v:			var(--transparencyalpha_s, var(--transparencyalpha));
+	--messagetransparency_v:		var(--messagetransparency_s, var(--messagetransparency));
+	--guildchanneltransparency_v:		var(--guildchanneltransparency_s, var(--guildchanneltransparency));
+	--chatinputtransparency_v:		var(--chatinputtransparency_s, var(--chatinputtransparency));
+	--memberlisttransparency_v:		var(--memberlisttransparency_s, var(--memberlisttransparency));
+	--accentcolor_v:			var(--accentcolor_s, var(--accentcolor));
+	
+	--font_v:				var(--font_s, var(--font));
+	--textshadow_v:				var(--textshadow_s, var(--textshadow));
+	--settingsicons_v:			var(--settingsicons_s, var(--settingsicons));
+	
+	--background_v:				var(--background_s, var(--background));
+	--backgroundposition_v:			var(--backgroundposition_s, var(--backgroundposition));
+	--backgroundsize_v:			var(--backgroundsize_s, var(--backgroundsize));
+	--backgroundblur_v:			calc(1px * var(--backgroundblur_s, var(--backgroundblur)));
+	
+	--popout_v:				var(--popout_s, var(--popout));
+	--popoutposition_v:			var(--popoutposition_s, var(--popoutposition));
+	--popoutsize_v:				var(--popoutsize_s, var(--popoutsize));
+	--popoutblur_v:				calc(1px * var(--popoutblur_s, var(--popoutblur)));
+	
+	--backdrop_v:				var(--backdrop_s, var(--backdrop));
+	--backdropposition_v:			var(--backdropposition_s, var(--backdropposition));
+	--backdropsize_v:			var(--backdropsize_s, var(--backdropsize));
+	--backdropblur_v:			calc(1px * var(--backdropblur_s, var(--backdropblur)));
+	
+	--textbrightest_v:			var(--textbrightest_s, var(--textbrightest));
+	--textbrighter_v:			var(--textbrighter_s, var(--textbrighter));
+	--textbright_v:				var(--textbright_s, var(--textbright));
+	--textdark_v:				var(--textdark_s, var(--textdark));
+	--textdarker_v:				var(--textdarker_s, var(--textdarker));
+	--textdarkest_v:			var(--textdarkest_s, var(--textdarkest));
+
+	
+	--usechatbubbles: 			calc(var(--messagetransparency_v) / (var(--messagetransparency_v) + 0.00000000000000000000001));
+	
+	--accentcolor2:				var(--accentcolor_v);
+	--mentioncolor:				var(--accentcolor_v);
+	--linkcolor:				var(--accentcolor_v);
+	
+	--successcolor: 			59, 165, 92;
+	--warningcolor: 			250, 166, 26;
+	--dangercolor: 				237, 66, 69;
+}
+
+body,											/* body													*/
+#app-mount .app_bd26cc,									/* app					container							*/
+#app-mount .app_a01fb1,									/* app					inner								*/
+#app-mount .loading_cea94f,								/* app					i18n loading							*/
+#app-mount .wrapper_a2a7b5,								/* app					errorscreen							*/
+#app-mount .bg_d4b6c5,									/* app					background							*/
+#app-mount .layer_d4b6c5,								/* layer				container							*/
+#app-mount .container_cbd271,								/* layer				container							*/
+#app-mount .container_ee69e0,								/* channels				inner								*/
+#app-mount .privateChannels_f0963d,							/* dmchannels												*/
+#app-mount .directoryContainer_da3f59,							/* server app directory											*/
+#app-mount .panels_a4d4d9 > *,								/* account/voice			inner								*/
+#app-mount .chat_a7d72e,								/* chat					container							*/
+#app-mount .chatContent_a7d72e,								/* chat					channel								*/
+#app-mount .container_a6d69a,								/* chat					forums								*/
+#app-mount .container_f1fd9c,								/* chat					search								*/
+#app-mount .container_c2efea,								/* chat					search inner							*/
+#app-mount .container_d1c246,								/* chat					thread sidebar							*/
+#app-mount .wrapper_ba0ffb,								/* chat					messages loading						*/
+#app-mount .noChannel_e1ef5f,								/* nochannel												*/
+#app-mount .members_cbd271,								/* members												*/
+#app-mount .members_cbd271 > div,							/* members				content								*/
+#app-mount .content_b47fac,								/* unavailable												*/
+#app-mount .container_c2739c,								/* peoples												*/
+#app-mount .container_bf550a,								/* peoples				activity list							*/
+#app-mount .applicationStore_cecc86,							/* nitro												*/
+#app-mount .shop_e77fa3,								/* shop													*/
+#app-mount .containerSidenav_d576e9,							/* family control											*/
+#app-mount .pageWrapper_a3a4ce,								/* guilddiscovery											*/
+#app-mount .pageContainer_a9a262,							/* unihub												*/
+#app-mount .scrollerBase_eed6a8,							/* scroller												*/
+#app-mount .standardSidebarView_c25c6d,
+#app-mount .sidebar_a4d4d9,
+#app-mount .wrapper_fea3ef,
+#app-mount .container_b2ca13,
+#app-mount .form_a7d72e::before,
+#app-mount .children_fc4f04::after,
+#app-mount .actionButton_e01b91,
+#app-mount .sidebarRegionScroller_c25c6d,
+#app-mount .contentRegionScroller_c25c6d,
+#app-mount .contentRegion_c25c6d {							/* settings				content								*/
+	background: transparent;
+	-webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
+
+#app-mount .scroller_bf550a {								/* peoples				activity scroller						*/
+	border: none;
+}
+
+#app-mount .children_fc4f04::after {
+	display: none;
+}
+
+
+#app-mount .sidebarRegion_c25c6d,							/* settings				sidebar								*/
+#app-mount .sidebar__0OpfR {								/* sidebarlist				sidebar								*/
+	background-color: rgba(var(--transparencycolor_v), calc(0.2 * (var(--transparencyalpha_v) / (var(--transparencyalpha_v) + 0.00000000000000000000001))));
+}
+
+#app-mount {										/* app-mount												*/
+	background-color: rgba(var(--transparencycolor_v), var(--transparencyalpha_v));
+}
+
+
+#app-mount .panels_a4d4d9 {								/* account/voice			container							*/
+	background-color: rgba(var(--transparencycolor_v), calc(var(--guildchanneltransparency_v) / 1.5));
+}
+#app-mount .container_fc4f04.themed_fc4f04 {						/* channelheader			container							*/
+	background-color: rgba(var(--transparencycolor_v), var(--guildchanneltransparency_v));
+}
+#app-mount .chatHeaderBar__3e137 {							/* channelheader			sub header							*/
+	background-color: rgba(var(--transparencycolor_v), var(--guildchanneltransparency_v));
+}
+#app-mount .membersWrap_cbd271 {							/* members				container							*/
+	background-color: rgba(var(--transparencycolor_v), var(--memberlisttransparency_v));
+}
+#app-mount .nowPlayingColumn_c2739c {							/* peoples				now playing							*/
+	background-color: rgba(var(--transparencycolor_v), var(--memberlisttransparency_v));
+}
+
+
+body::before,
+body::after {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none;
+	z-index: -1;
+}
+body::before {
+	background: var(--background_v) var(--backgroundposition_v)/var(--backgroundsize_v);
+}
+body::after {
+	backdrop-filter: blur(var(--backgroundblur_v));
+}
+

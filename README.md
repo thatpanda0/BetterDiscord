@@ -10,3 +10,9 @@ These themes are either directly stolen without any modifications or stolen and 
 - Basic Background (basic background by DevilBro, but I remove icons and add blur)
 - macOS titlebar (directly stolen from discord-extensions, replicates macOS titlebar for Windows)
 - 2023Profile (Tries to return 2023-2024 Discord Profile, DO NOT use with Fluent-Basic, instead replace OG Profile section of Fluent-Basic)
+
+## Sources and credits
+- https://github.com/discord-extensions/macos-titlebar
+- https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/BasicBackground
+- https://github.com/milbits/oldcord
+- https://github.com/TakosThings/Fluent-Discord

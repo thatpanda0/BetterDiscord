@@ -3,6 +3,7 @@ This is here for changelog and progress update (no way!?!?!). Mostly for trackin
 
 ## Changelog
 
+- **Changelog 1.16**: Finally added support for new Discord release, notes are still broken as of now (they appear but always on the "Message user" textbox). 
 - **Changelog 1.15**: Added "VIEW PROFILE" text, added a notes section, still a bug because Notes section is measured relative to top rather than relative to desc. clamp, will fix (if possible) in 1.2 
 - **Changelog 1.1**: Added support for custom status messages, added line break between name/status and desc. clamp
 - **Changelog 1.0**: Added "ABOUT ME" text, allowed for up to 19 lines of desc. clamp, allowed support for badges and made them better (3px padding + 10px border-radius)

@@ -19,4 +19,4 @@ This is here for changelog and progress update (no way!?!?!). Mostly for trackin
 
 ## Screenshots
 
-![alt text](https://github.com/thatpanda0/BetterDiscord/blob/main/Images/e.png)
+![alt text](https://github.com/thatpanda0/BetterDiscord/blob/main/Images/e2.png)

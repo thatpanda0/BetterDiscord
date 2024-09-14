@@ -16,3 +16,7 @@ This is here for changelog and progress update (no way!?!?!). Mostly for trackin
 
 - 9 September 2024: New Discord (major?) update: rewrite of classes 😢
 - 29 October 2024: Started making this css
+
+## Screenshots
+
+![alt text](https://github.com/thatpanda0/BetterDiscord/blob/Images]/sushi.png?raw=true)

@@ -1,0 +1,299 @@
+/**
+    * @name Profile+
+    * @description Old 2023 Profile
+    * @version 1.15
+    * @author That Panda
+**/
+
+
+.viewFullBio_abaf7d {
+	display: none;
+}
+.descriptionClamp_abaf7d {
+	-webkit-line-clamp: 190 !important;
+	position: relative;
+	max-height: 2000px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.descriptionClamp_abaf7d::-webkit-scrollbar-thumb {
+	background: transparent;
+	border-radius: 99px;
+}
+.descriptionClamp_abaf7d::-webkit-scrollbar {
+	width: 4px;
+}
+.descriptionClamp_abaf7d:hover::-webkit-scrollbar-track {
+	background: 0 0;
+	border-radius: 10px;
+}
+.descriptionClamp_abaf7d:hover::-webkit-scrollbar-thumb {
+	background: var(--bg-overlay-6, var(--background-tertiary));
+	border-radius: 0px;
+}
+
+
+.descriptionClamp_abaf7d:before {
+	content: "ABOUT ME";
+	font-size: 13px;
+	color: var(--header-secondary);
+	font-weight: 800;
+	font-family: var(--font-display);
+    
+}
+
+/* Roles */
+.root_c83b44:before {
+	content: "ROLES";
+	font-size: 13px;
+	color: var(--header-secondary);
+	font-weight: 800;
+	font-family: var(--font-display);
+	margin-right: 200px;
+	margin-bottom: 4px;
+}
+
+
+.body_b8cc6d {
+    z-index: 1;
+    padding: 8px 6px 8px;
+    margin: auto;
+    flex-direction: column;
+    gap: 12px;
+    background: linear-gradient(color-mix(in oklab,var(--profile-gradient-overlay-color)90%,var(--profile-gradient-primary-color)),color-mix(in oklab,var(--profile-gradient-overlay-color)90%,var(--profile-gradient-primary-color))var(--custom-user-banner-height-bite-size),color-mix(in oklab,var(--profile-gradient-overlay-color)90%,var(--profile-gradient-secondary-color)));
+    border-radius: 10px;
+    width: 265px;
+	overflow: visible !important;
+	/* fix1: margin-bottom: 60px; */
+}
+
+/* Bricks/Better badges */
+.container_b64375 {
+	display: flex; /* replace with display: none; for no badges */
+	padding: 4px;
+	border-radius: 10px;
+}
+
+.mutuals_fc9b46 {
+  display: none;
+}
+
+.container_c32acf {
+    border-bottom: 1px solid rgba(128,128,128,0.33); 
+    padding-bottom: 40px; /* 50px if with status */
+}
+
+
+.descriptionClamp_abaf7d { 
+	margin-bottom: 45px;
+	margin-top: 0px;
+}
+
+
+/* status */
+
+.statusBubbleOuter_d0a252,
+.statusBubble_d0a252 {
+	border: none ;
+	background: none;
+	text-align: left;
+	right: 45px;
+	bottom: 10px;
+	box-shadow: none;
+}
+.statusBubbleOuter_d0a252:before,
+.statusBubbleOuter_d0a252:after {
+	display: none;
+}
+.statusBubbleOuter_d0a252 {
+	background: transparent;
+}
+
+.statusBubbleOuter_d0a252, .statusBubbleOuter_d0a252:before,.statusBubbleOuter_d0a252:after {
+	box-shadow: none;
+	z-index: 1;
+	background: transparent;
+	top: 110px;
+	max-height: 45px;
+	max-width: 50ch;
+}
+
+.custom-profile-theme.theme-dark .statusBubbleOuter_d0a252 {
+	border: none;
+}
+
+.custom-profile-theme.theme-light .statusBubbleOuter_d0a252 {
+	border: none;
+}
+
+/* restores "View Profile" text when hovering over a pfp on profile popouts */
+.overlay_f94206::before {
+	position: absolute;
+	z-index: 1;
+}
+
+.clickable_f94206:hover .overlay_f94206::before {
+	content: "VIEW PROFILE";
+	opacity: 1;
+	font-size: 10px;
+	text-align: center;
+	color: white;
+	top: 39px;
+	left: 7px;
+	font-weight: bold;
+}
+
+
+/* DESTROY the Edit Profile button */
+
+[aria-label="Edit Profile"] {
+	display: none;	
+}
+
+/* experimenting with notes */
+
+.nicknameIcons_c32acf [aria-label]:after {
+	z-index: 1;
+	content: attr(aria-label);
+	position: absolute;
+	min-width: 250px;
+	text-align: left;
+	margin-left: 240px;
+	margin-top: auto;
+	max-height: 38px;
+	margin-bottom: 20px;
+}
+
+.nicknameIcons_c32acf {
+	top: 100%;
+	position: absolute;
+	display: flex !important;
+	margin-top: -20px;
+}
+
+.nicknameIcons_c32acf .button_f9d37d {
+	opacity: 1;
+}
+
+.nicknameIcons_c32acf .button_f9d37d:before {
+	z-index: 1;
+	content: "NOTE";
+	bottom: 25px;
+	left: 1px;
+	position: absolute;
+	color: var(--header-secondary);
+	font-weight: 800;
+	font-size: 13px;
+}
+
+.nicknameIcons_c32acf .buttonInner_f9d37d {
+	display: none;
+}
+
+
+
+.root_e6f2d0:before {
+	content: "ROLES";
+	font-size: 13px;
+	color: var(--header-secondary);
+	font-weight: 800;
+	font-family: var(--font-display);
+	margin-right: 200px;
+	margin-bottom: 4px;
+}
+
+.nicknameIcons_c32acf {
+	display: none;
+}
+
+element.style {
+	overflow: visible;
+}
+
+.biteSize_cb78f1 div:nth-child(2) {
+	display: none;
+}
+
+/** Roles */
+.root_e6f2d0:before {
+	content: "ROLES";
+	font-size: 13px;
+	color: var(--header-secondary);
+	font-weight: 800;
+	font-family: var(--font-display);
+	margin-right: 200px;
+	margin-bottom: 4px;
+}
+[lang="DE"] .root_e6f2d0:before {
+	content: "ROLLEN";
+}
+
+.root_e6f2d0 {
+	position: relative;
+	margin-bottom: 60px;
+	margin-top: 12px;
+}
+.role_f9575e {
+	background-color: transparent;
+}
+
+.addButtonIcon_e4010c {
+	width: 10px;
+	height: 10px;
+}
+
+.theme-dark .actionButton_e4010c {
+	border-color: var(--background-accent);
+	color: #b9bbbe;
+	background: 0 0;
+}
+
+.role_f9575e {
+	transform: translate(0);
+	border: 0;
+	border-radius: 4200px;
+
+}
+.role_f9575e .roleRemoveIcon_f9575e {
+	margin: 0;
+	left: 1px;
+	transform: translate(50%, -50%);
+}
+.role_f9575e .roleRemoveButton_f9575e {
+	position: static;
+}
+.roleCircle_a26d7b {
+	margin: 0 4px 0px 1px !important;
+}
+.role_f9575e > :first-child {
+	margin: 0;
+}
+/* Add a colored border around the role */
+.role_f9575e .roleRemoveButton_f9575e :is(.roleCircle_a26d7b,.roleFlowerStar_f9575e/*linked roles*/):before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	background: inherit;
+	border-radius: 50px;
+	border: 0.65px solid transparent;
+	-webkit-mask: linear-gradient(#000, #000) padding-box, linear-gradient(#000, #000);
+	-webkit-mask-composite: xor;
+	opacity: 0.6;
+	content: "";
+	z-index: -1;
+}
+
+/* border around addrole button*/
+:is(.root_e6f2d0) .button_dd4f85,
+.button_edead5 {
+	border: 1px solid var(--interactive-muted);
+	background: none;
+	border-radius: 999%;
+}
+
+.messageInputContainer_f2c0a8 {
+	border: none;
+}

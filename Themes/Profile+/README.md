@@ -19,4 +19,15 @@ This is here for changelog and progress update (no way!?!?!). Mostly for trackin
 
 ## Screenshots
 
-![alt text](https://github.com/thatpanda0/BetterDiscord/blob/main/Images/e2.png)
+![alt text](https://github.com/thatpanda0/BetterDiscord/blob/main/Images/preview.png)
+
+If you couldn't tell what changed:
+- Added "+Add Status" button at top
+- Newline below Add status button
+- Status messages now show inside the profile not in a bubble (yipee)
+- Description can be longer than 3 lines (up to 190 lines)
+- Added note section (moved button to bottom)
+- Added labels
+- Added "View Profile" text on PFP hover
+- Added inner box thing to resemble 2023's theme
+- Badges have more padding and border radius

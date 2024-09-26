@@ -20,6 +20,7 @@ This is here for changelog and progress update (no way!?!?!). Mostly for trackin
 ## Screenshots
 
 ![alt text](https://github.com/thatpanda0/BetterDiscord/blob/main/Images/preview.png)
+![alt text](https://github.com/thatpanda0/BetterDiscord/blob/main/Images/Untitled.png)
 
 If you couldn't tell what changed:
 - Added "+Add Status" button at top

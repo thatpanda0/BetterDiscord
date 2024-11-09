@@ -7,6 +7,8 @@ These themes are either directly stolen without any modifications or stolen and 
 - Windows Titlebar (tries to restore default Windows titlebar)
 - Basic Background (basic background by DevilBro, but I remove icons and add blur)
 - 2023Profile
+- E (Changes titlebar to Teams-like titlebar)
+- F (changes emojis, still in alpha testing)
 
 ## Sources and credits
 - https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/BasicBackground

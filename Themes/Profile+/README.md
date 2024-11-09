@@ -3,6 +3,7 @@ This is here for changelog and progress update (no way!?!?!). Mostly for trackin
 
 ## Changelog
 
+- **Changelog 1.21**: Fixed bugs (Discord stop changing class names) with body of profile, adjusted for Discord updates
 - **Changelog 1.20**: Fixed roles overlapping with note button, profiles look kinda weird still because extra margin on descriptionClamp
 - **Changelog 1.20 Beta**: Finally got around to fixing the note button, a few pixels offset but good enough
 - **Changelog 1.16**: Finally added support for new Discord release, notes are still broken as of now (they appear but always on the "Message user" textbox). 

@@ -1,0 +1,542 @@
+/**
+ * @name E
+ * @author E
+ * @version 1
+ * @description E
+*/
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/bearableInbox.css);
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/bettterInvites.css);
+@import url("https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/icons.css");
+@import url(https://nyri4.github.io/Discolored/main.css);
+@font-face {
+  font-family: "Segoe UI";
+  src: local("Segoe UI Light"), url("https://discordstyles.github.io/Fluent/fonts/light.woff2") format("woff2");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: local("Segoe UI Semilight"), url("https://discordstyles.github.io/Fluent/fonts/semilight.woff2") format("woff2");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: local("Segoe UI"), url("https://discordstyles.github.io/Fluent/fonts/normal.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: local("Segoe UI Semibold"), url("https://discordstyles.github.io/Fluent/fonts/semibold.woff2") format("woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: local("Segoe UI Bold"), url("https://discordstyles.github.io/Fluent/fonts/bold.woff2") format("woff2");
+  font-weight: 700;
+}
+:root {
+  --home-image: url(https://maendisease.github.io/Outlook/illustrations/homeimage-default.avif);
+  --accent-hue: 208;
+  --accent-saturation: 85%;
+  --accent-brightness: 40%;
+  --gradient-toggle: 1;
+  --gradient-hue-shift: 0.2;
+  --gradient-saturation: 50%;
+  --gradient-deg: 179.52deg;
+  --customFont: "Segoe UI";
+}
+
+:root {
+  --titlebar-height: 48px;
+  --panel-spacing: 8px;
+  --notices-height: 36px;
+  --font-display: var(--customFont), "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  --font-primary: var(--customFont), "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+#app-mount:has(.themeEditor_c9dda6) {
+  --theme-preview-width: 260px;
+}
+
+
+/*
+:root {
+  --brand-experiment: #106cbc;
+}
+*/
+.theme-light:root {
+  --rgb-overlay: 255 255 255;
+  --rgb-overlay-inverse: 0 0 0;
+}
+
+.theme-dark:root {
+  --rgb-overlay: 14 14 14;
+  --rgb-overlay-inverse: 255 255 255;
+}
+
+
+.bg_d4b6c5 {
+  background: var(--bg-overlay-3, var(--gradient-kit-80a)), var(--background-secondary);
+}
+
+
+
+.platform-win .typeWindows_a934d8 {
+  z-index: 102;
+  position: absolute;
+  flex-direction: row;
+  align-items: center;
+  width: 69px;
+  margin: 0;
+  padding-top: 1px;
+  padding-left: 3px;
+  height: calc(var(--titlebar-height) - 1px);
+  background: none;
+}
+
+.platform-win .typeWindows_a934d8 .wordmark_a934d8 g {
+  display: none;
+}
+
+.custom-theme-background .withBackgroundOverride_a934d8.typeWindows_a934d8 {
+  margin-top: 0;
+  padding-top: 1px;
+}
+
+.winButton_a934d8 {
+  top: -1px;
+}
+
+.platform-win .typeWindows_a934d8 .wordmark_a934d8 {
+  top: 17px;
+  left: 11px;
+  width: 52px;
+  height: 12px;
+  padding: 0;
+  -webkit-app-region: no-drag;
+}
+
+.platform-win .typeWindows_a934d8 .wordmark_a934d8 g {
+  display: none;
+}
+
+.platform-win .typeWindows_a934d8 .winButton_a934d8 svg {
+  display: none;
+}
+
+.platform-win .typeWindows_a934d8 .winButton_a934d8 {
+  width: 12px;
+  height: 12px;
+  margin-left: 8px;
+  border-radius: 15px;
+  background: var(--background-primary);
+  background-size: 0;
+  -webkit-app-region: no-drag;
+}
+
+.platform-win.app-focused .typeWindows_a934d8:hover div.winButton_a934d8 {
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.platform-win.app-focused .typeWindows_a934d8 .winButtonClose_a934d8 {
+  background-color: #ff5c57;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTUuMjkyODkgNkwyLjgxODAxIDMuNTI1MTNMMy41MjUxMiAyLjgxODAyTDUuOTk5OTkgNS4yOTI4OUw4LjQ3NDg3IDIuODE4MDJMOS4xODE5NyAzLjUyNTEzTDYuNzA3MSA2TDkuMTgxOTcgOC40NzQ4N0w4LjQ3NDg3IDkuMTgxOThMNS45OTk5OSA2LjcwNzExTDMuNTI1MTIgOS4xODE5OEwyLjgxODAxIDguNDc0ODdMNS4yOTI4OSA2WiIgZmlsbD0iI0EyMDAwOCIvPgo8L3N2Zz4=);
+}
+
+.platform-win.app-focused .typeWindows_a934d8 .winButtonMinMax_a934d8:nth-child(2n) {
+  background-color: #fdbd3d;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDUuMzk5OTlIMlY2LjU5OTk5SDEwVjUuMzk5OTlaIiBmaWxsPSIjQjM3MTFBIi8+Cjwvc3ZnPg==);
+}
+
+.platform-win.app-focused .typeWindows_a934d8 .winButtonMinMax_a934d8:nth-child(3n) {
+  order: 3;
+  background-color: #26c84b;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcuMzkyOTMgMy4wMDg5M0wzLjAwODg3IDcuMzkyOTlMMi44MTc5NSAyLjgxODAxTDcuMzkyOTMgMy4wMDg5M1oiIGZpbGw9IiMwMjZBMTUiLz4KPHBhdGggZD0iTTQuNjA2OTUgOC45OTEwMUw4Ljk5MTAxIDQuNjA2OTVMOS4xODE5MyA5LjE4MTkzTDQuNjA2OTUgOC45OTEwMVogIiBmaWxsPSIjMDI2QTE1Ii8+Cjwvc3ZnPg==);
+}
+
+#app-mount ::-webkit-scrollbar-track {
+  background: none;
+}
+
+#app-mount ::-webkit-scrollbar-thumb {
+  background-color: var(--scroller-color);
+}
+
+#app-mount ::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scroller-hover-color);
+}
+
+.headerText_d5089b,
+.eyebrow_c15ff6 {
+  text-transform: capitalize;
+}
+
+.wrapper_fea3ef {
+  background: var(--bg-overlay-4, var(--gradient-kit-50a)), var(--background-tertiary);
+}
+
+#app-mount .wrapper_fea3ef {
+  margin-top: 48px;
+}
+
+#app-mount .scroller_fea3ef {
+  background: none;
+}
+
+#app-mount .wrapper_f90abb.selected_f90abb .childWrapper_f90abb,
+#app-mount .wrapper_f90abb:hover .childWrapper_f90abb {
+  color: var(--brand-experiment);
+}
+
+#app-mount .wrapper_f90abb:hover .childWrapper_f90abb {
+  background: var(--background-primary);
+}
+
+#app-mount .wrapper_f90abb:active .childWrapper_f90abb {
+  background: var(--background-modifier-active);
+}
+
+
+
+#app-mount .childWrapper_f90abb,
+#app-mount .circleIconButton_db6521 {
+  background: none;
+}
+
+.theme-light #app-mount .container_b2ca13 {
+  height: var(--titlebar-height);
+  width: calc(100% - 72px - var(--theme-preview-width, 0px));
+  background: transparent !important;
+/*  background: linear-gradient(87.49deg, #f7e8eb 0%, #eaeff6 100%); */
+  position: fixed;
+  top: 0;
+  right: var(--theme-preview-width, 0px);
+  justify-content: right;
+  padding: unset;
+  -webkit-app-region: drag;
+}
+
+.theme-dark #app-mount .container_b2ca13 {
+  height: var(--titlebar-height);
+  width: calc(100% - 72px - var(--theme-preview-width, 0px));
+  background: transparent !important;
+/*  background: linear-gradient(87.49deg, #f7e8eb 0%, #eaeff6 100%); */
+  position: fixed;
+  top: 0;
+  right: var(--theme-preview-width, 0px);
+  justify-content: right;
+  padding: unset;
+  -webkit-app-region: drag;
+}
+
+.container_b2ca13::before {
+  content: "Discord";
+  font-weight: 600;
+  font-family: var(--font-display);
+  font-size: 16px;
+  line-height: var(--titlebar-height);
+  margin-right: auto;
+  color: black;
+  margin-left: 8px;
+  -webkit-app-region: drag;
+}
+
+.theme-dark .container_b2ca13::before {
+  content: "Discord";
+  font-weight: 600;
+  font-family: var(--font-display);
+  font-size: 16px;
+  line-height: var(--titlebar-height);
+  margin-right: auto;
+  color: white;
+  margin-left: 8px;
+  -webkit-app-region: drag;
+}
+
+.container_b2ca13::after {
+  content: "";
+  display: block;
+  background: --brand-experiment; 
+  height: var(--titlebar-height);
+  width: 72px;
+  position: absolute;
+  left: -72px;
+}
+
+.container_b2ca13 > * {
+  -webkit-app-region: no-drag;
+}
+
+.avatarWrapper_b2ca13 {
+  order: 1;
+  min-width: unset;
+  height: var(--titlebar-height);
+  width: 48px;
+  margin-left: 0;
+  margin-right: 0px;
+  padding-left: 0;
+  justify-content: center;
+}
+
+
+
+.container_b2ca13 > .flex_bba380 > button {
+  height: var(--titlebar-height);
+  width: 48px;
+  border-radius: 0;
+  color: #FFFFFF;
+}
+
+.container_b2ca13 > .flex_bba380 > button:hover {
+  color: #FFFFFF;
+  background: var(--brand-760);
+  transition: background 0.467s cubic-bezier(0.1, 0.9, 0.2, 1) 34ms;
+}
+
+.nameTag_b2ca13 {
+  display: none;
+}
+
+.container_adcaac {
+  border-bottom: none;
+  border-top: 1px solid var(--neutralTertiary);
+  background: var(--bg-overlay-1, var(--gradient-kit-80a)), var(--background-secondary);
+}
+
+#app-mount .panel_bf1a22 {
+  background: var(--bg-overlay-1, var(--gradient-kit-70a)), var(--background-secondary);
+}
+
+
+
+
+.unreadImportant_d8bfb3 {
+  background: var(--brand-experiment);
+}
+
+.privateChannels_f0963d,
+#app-mount .scroller_c47fa9 {
+  background: none;
+}
+
+.name_f9647d {
+  font-size: 12px;
+}
+
+.container-q97qHp {
+  text-transform: capitalize;
+}
+
+
+#app-mount:not(:-webkit-full-screen) .content_a4d4d9 {
+  margin-top: 48px;
+}
+
+.searchResultsWrap_c2b47d {
+  background: var(--bg-overlay-chat, var(--gradient-kit-925a)), var(--background-primary);
+  border-radius: 4px;
+  border: 1px solid var(--background-tertiary);
+  margin-left: var(--panel-spacing) - 100;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: calc(100% + 4px);
+}
+
+.searchHeader_b7c924 {
+  background: var(--bg-overlay-chat, var(--gradient-kit-925a)), var(--background-primary);
+  border-bottom: 1px solid var(--background-tertiary);
+  height: 52px;
+}
+
+.searchHeaderTabList_b7c924 {
+  gap: 0;
+}
+
+.searchResultsWrap_c2b47d .scroller_c2b47d {
+  margin-bottom: 4px;
+}
+
+.searchResultGroup_a9e225 {
+  margin-bottom: 16px;
+  background: var(--n-yellow-canvas);
+  position: relative;
+  box-shadow: var(--elevation-card);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.searchResultGroup_a9e225:before {
+  content: "";
+  width: 100%;
+  height: 6px;
+  background: var(--n-yellow-stroke);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.channelNameContainer_a9e225 {
+  padding: 16px 16px 8px 16px;
+  margin-bottom: 0;
+}
+
+.channelNameText_a9e225 {
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--header-primary);
+  font-weight: 600;
+}
+
+.searchResult_ddc613 {
+  background: none;
+}
+
+.searchBar_e0840f {
+  margin: 16px 16px 0 16px;
+  background: var(--background-secondary);
+  border: 1px solid var(--neutralTertiary);
+}
+
+.searchBar_e0840f .inner__999f6 {
+  padding: 0;
+}
+
+.search_ff5f90 {
+  margin: 0;
+  position: fixed;
+  top: 8px;
+  left: 320px;
+}
+
+.searchBar_a46bef {
+  height: 32px;
+  min-width: 350px;
+  flex: 1 1 350px;
+  background: var(--brand-experiment-200);
+}
+
+.theme-dark .searchBar_a46bef {
+  background: var(--brand-experiment-700);
+}
+
+.focused_a46bef .searchBar_a46bef,
+.open_a46bef .searchBar_a46bef {
+  max-width: 928px;
+  background: var(--background-primary);
+  width: unset;
+}
+
+.searchBar_a46bef .icon_a46bef {
+  width: 32px;
+  height: 32px;
+  transform: scaleX(-1);
+  order: -1;
+}
+
+.searchBar_a46bef .icon_a46bef .iconContainer_effbe2 {
+  height: 20px;
+  width: 20px;
+}
+
+.search_a46bef .DraftEditor-root {
+  flex: 1;
+  font-size: 14px;
+  line-height: 20px;
+  overflow: hidden;
+  padding: 6px 0;
+}
+
+.search_a46bef .DraftEditor-root .public-DraftEditorPlaceholder-root {
+  color: var(--brand-experiment-600);
+}
+
+.theme-dark .search_a46bef .DraftEditor-root .public-DraftEditorPlaceholder-root,
+.theme-dark .searchBar_a46bef .icon_effbe2 {
+  color: var(--brand-experiment-130);
+}
+
+.searchBar_f0963d {
+  box-shadow: none;
+}
+
+.input_f4e139 {
+  padding: 0 12px;
+  font-size: 20px;
+  border-radius: 4px;
+  border: 1px solid var(--neutralTertiary);
+  height: 52px;
+  line-height: 52px;
+  color: var(--text-normal);
+  background: var(--background-secondary);
+}
+
+.search_c2efea {
+  border-radius: 40px;
+}
+
+.searchBar_a46bef {
+  background-color: #f9f9f9;
+}
+
+.theme-dark .searchBar_a46bef {
+  background-color: #444444;
+}
+
+
+.scroller_c47fa9 {
+  border-top-left-radius: 15px !important;
+}
+
+/* my own comfort features, remove if you dont like */
+
+
+/* no Discover tab */
+.footer_aa1bff {
+  display: none;
+}
+/* No Activities tab */
+[aria-label="Apps"] {
+  display: none;
+}
+/* No gifting Nitro */
+[aria-label="Send a gift"] {
+  display: none;
+}
+/* No sending GIFs */
+[aria-label="Open GIF picker"] {
+  display: none;
+}
+/* No editing image with apps */
+[aria-label="Edit Image with Apps"] {
+  display: none;
+}
+
+/* No Quests in bar */
+
+.wrapper_efa999 {
+  display: none;
+}
+
+.content_fb2cb3,
+.contentExpanded_e23249 {
+  display: none;
+}
+
+
+.nowPlayingColumn_c2739c {
+  display: none;
+}
+
+/* comfort css remove if extra */
+/*
+#app-mount {
+  background: linear-gradient(87.49deg, #f7e8eb 0%, #eaeff6 100%) !important;
+}
+
+
+
+.scroller_fea3ef {
+  background-image: linear-gradient(#f7e8eb 0%, #eaeff6 100%) !important;
+}
+*/

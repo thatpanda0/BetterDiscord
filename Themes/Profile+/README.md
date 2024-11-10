@@ -3,6 +3,7 @@ This is here for changelog and progress update (no way!?!?!). Mostly for trackin
 
 ## Changelog
 
+- **Changelog 1.22 Beta**: Starting to make badges on the top right like before (make Discord great again lmao), lots of things still broken
 - **Changelog 1.21**: Fixed bugs (Discord stop changing class names) with body of profile, adjusted for Discord updates
 - **Changelog 1.20**: Fixed roles overlapping with note button, profiles look kinda weird still because extra margin on descriptionClamp
 - **Changelog 1.20 Beta**: Finally got around to fixing the note button, a few pixels offset but good enough
@@ -15,8 +16,10 @@ This is here for changelog and progress update (no way!?!?!). Mostly for trackin
 
 ## Progress and other
 
-- 9 September 2024: New Discord (major?) update: rewrite of classes 😢
-- 29 October 2024: Started making this css
+- 9 November 2024: Badges!! (experiment)
+- 7 Novenber 2024: New Discord update: rewrite classes, minor
+- 29 October 2024: New Discord (major?) update: rewrite of classes 😢
+- 9 September 2024: Started making this CSS (Not on GitHub)
 
 ## Screenshots
 
@@ -33,3 +36,4 @@ If you couldn't tell what changed:
 - Added "View Profile" text on PFP hover
 - Added inner box thing to resemble 2023's theme
 - Badges have more padding and border radius
+- Badges are starting to go to regular (experiment)

@@ -16,6 +16,7 @@ This is here for changelog and progress update (no way!?!?!). Mostly for trackin
 
 ## Progress and other
 
+- 14 November 2024: Physically banned from Discord :/
 - 9 November 2024: Badges!! (experiment)
 - 7 Novenber 2024: New Discord update: rewrite classes, minor
 - 29 October 2024: New Discord (major?) update: rewrite of classes 😢

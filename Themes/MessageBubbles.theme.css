@@ -1,0 +1,129 @@
+:root {
+  --darkplus-bg: #eeeeee;
+  --darkplus-bg2: #eeeeee;
+  --sigma: #111111;
+  --darkplus-sec: #bb86fc;
+  --darkplus-links: #cdaef3;
+  --darkplus-home-icon: url(https://devevil.com/betterdiscord/dark%2b-logo.png);
+  --watermark-filter-invert: 0%;
+  --watermark-filter-sepia: 50%;
+  --watermark-filter-saturate: 3000%;
+  --watermark-filter-hue-rotate: 210deg;
+  --watermark-filter-brightness: 70%;
+  --watermark-filter-contrast: 200%;
+}
+
+.contents_f9f2ca .messageContent_f9f2ca, .container_b558d0 {
+  background-color: var(--darkplus-bg2);
+  display: inline-block;
+  max-width: 650px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  padding: 8px;
+  border-radius: 15px;
+}
+
+.messageContent_f9f2ca:empty {
+  display: none !important;
+}
+
+.newMessagesBar_cf58b5 {
+  background-color: var(--darkplus-sec);
+}
+
+.messageGroupWrapper_ac90a2 .messageGroupCozy_ac90a2 {
+  background-color: var(--darkplus-bg2);
+}
+
+.messages_c06487 {
+  background-color: var(--darkplus-bg2);
+}
+.channelHeader_f3978e {
+  background-color: var(--darkplus-bg2);
+}
+.tertiary_ad6d80 {
+  background-color: var(--darkplus-bg);
+  color: var(--darkplus-sec);
+}
+.tertiary_ad6d80:hover:not(.disabled__4d064) {
+  background-color: var(--darkplus-bg);
+  color: var(--darkplus-sec);
+}
+.tutorialIcon_f1c3d9 {
+  background-color: var(--darkplus-bg);
+  color: var(--darkplus-sec);
+}
+.secondary__45d4f {
+  background-color: var(--darkplus-bg2);
+  color: var(--darkplus-sec);
+}
+.secondary__45d4f:hover:not(.disabled__4d064) {
+  background-color: var(--darkplus-bg2);
+  color: var(--darkplus-sec);
+}
+.messageContainer_ddb5b4 {
+  background-color: var(--darkplus-bg2);
+}
+
+
+
+/* only use if you have dark mode
+.theme-dark .contents_f9f2ca .messageContent_f9f2ca, .container_b558d0 {
+  background-color: var(--sigma);
+  display: inline-block;
+  max-width: 650px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  padding: 8px;
+  border-radius: 15px;
+}
+*/
+.theme-dark .messageContent_f9f2ca:empty {
+  display: none !important;
+}
+
+.theme-dark .newMessagesBar_cf58b5 {
+  background-color: var(--sigma);
+}
+
+.theme-dark .messageGroupWrapper_ac90a2 .messageGroupCozy_ac90a2 {
+  background-color: var(--sigma);
+}
+
+.theme-dark .messages_c06487 {
+  background-color: var(--sigma);
+}
+.theme-dark .channelHeader_f3978e {
+  background-color: var(--sigma);
+}
+.theme-dark .tertiary_ad6d80 {
+  background-color: var(--sigma);
+  color: var(--darkplus-sec);
+}
+.theme-dark .tertiary_ad6d80:hover:not(.disabled__4d064) {
+  background-color: var(--sigma);
+  color: var(--darkplus-sec);
+}
+.theme-dark .tutorialIcon_f1c3d9 {
+  background-color: var(--sigma);
+  color: var(--darkplus-sec);
+}
+.theme-dark .secondary__45d4f {
+  background-color: var(--sigma);
+  color: var(--darkplus-sec);
+}
+.theme-dark .secondary__45d4f:hover:not(.disabled__4d064) {
+  background-color: var(--sigma);
+  color: var(--darkplus-sec);
+}
+.theme-dark .messageContainer_ddb5b4 {
+  background-color: var(--sigma);
+}
+
+.fixedDiscoveryIcon_fea3ef {
+  display: none;
+}

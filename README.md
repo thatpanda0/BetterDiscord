@@ -9,6 +9,7 @@ These themes are either directly stolen without any modifications or stolen and 
 - 2023Profile
 - E (Changes titlebar to Teams-like titlebar)
 - F (changes emojis, still in alpha testing)
+- MessageBubbles (message bubbles)
 
 ## Sources and credits
 - https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/BasicBackground

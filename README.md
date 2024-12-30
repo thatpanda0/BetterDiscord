@@ -10,6 +10,7 @@ These themes are either directly stolen without any modifications or stolen and 
 - E (Changes titlebar to Teams-like titlebar)
 - F (changes emojis, still in alpha testing)
 - MessageBubbles (message bubbles)
+- Recolor Tests (makes a lot of things white, don't use)
 
 ## Sources and credits
 - https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/BasicBackground

@@ -1,0 +1,130 @@
+/**
+ * @name Recolor tests
+ * @author Someone
+ * @version 1
+ * @description Recoloring certain parts of Discord - DO NOT USE
+*/
+
+
+
+.content_a4d4d9 {
+    background-color: white !important;
+}
+
+.privateChannels_f0963d {
+    background: white !important;
+}
+
+.searchBar_f0963d {
+    background: none;
+    width: 230px;
+}
+
+.fixedDiscoveryIcon_fea3ef {
+  display: none;
+}
+
+#app-mount .itemsContainer_fea3ef {
+    background: var(--background-primary) !important;
+}
+
+
+/* my own comfort features, remove if you dont like */
+
+
+/* no Discover tab */
+.footer_d71945 {
+  display: none;
+}
+/* No Activities tab */
+[aria-label="Apps"] {
+  display: none;
+}
+/* No gifting Nitro */
+[aria-label="Send a gift"] {
+  display: none;
+}
+/* No sending GIFs */
+[aria-label="Open GIF picker"] {
+  display: none;
+}
+/* No editing image with apps */
+[aria-label="Edit Image with Apps"] {
+  display: none;
+}
+
+/* No Quests in bar */
+
+.wrapper_efa999 {
+  display: none;
+}
+
+.content_fb2cb3,
+.contentExpanded_e23249 {
+  display: none;
+}
+
+
+.nowPlayingColumn_c2739c {
+  display: none;
+}
+
+/* comfort css remove if extra */
+/*
+#app-mount {
+  background: linear-gradient(87.49deg, #f7e8eb 0%, #eaeff6 100%) !important;
+}
+*/
+
+.tree_fea3ef {
+  background-color: var(--background-secondary) !important;
+}
+
+.footer_f8ec41 {
+  display: none;
+}
+
+.children_fc4f04::after {
+  display: none;
+}
+
+.sendIcon_a06035 {
+  display: none;
+}
+
+.buttonWrapper_f9af59 {
+  display: none;
+}
+
+.container_e5a9ed {
+  display: none;
+}
+
+[aria-label="Private Channels"] {
+  width: 98px;
+}
+
+.sidebar_a4d4d9 {
+  width: 260px !important;
+}
+
+
+.subtitleContainer_a7d72e {
+  display: none;
+}
+
+.container_b2ca13 {
+    background: white !important;
+}
+
+.container_ee69e0 {
+  background: white !important;
+}
+
+.activityPanel_a4d4d9 {
+  display: none;
+}
+
+.scroller_c47fa9 {
+  background: white !important;
+}

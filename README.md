@@ -1,3 +1,6 @@
+# Please note: This repository is no longer maintained - I don't have the time or effort to entirely rewrite my code (because of BetterDiscord 1.12 and Discord major updates)
+
+
 # BetterDiscord
 Contains code for some BetterDiscord themes. 
 
